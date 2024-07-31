@@ -1,1 +1,1 @@
-Example of building a Beamer theme for a conference (motiviated by PEARC24)
+Example of building a Beamer theme for a conference (motivated by PEARC24)
