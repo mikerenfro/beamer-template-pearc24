@@ -1,3 +1,15 @@
 \mode<presentation>
-
+\beamertemplatenavigationsymbolsempty
+% Taken from beamerouterthemesplit.sty
+\setbeamertemplate{footline}
+{%
+  \leavevmode%
+  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=27.5pt,dp=1.6875ex,leftskip=.3cm plus1fill,rightskip=.3cm]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=27.5pt,dp=1.6875ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle\nobreak\hfill\usebeamercolor[fg]{page number in head/foot}\usebeamerfont{page number in head/foot}\usebeamertemplate{page number in head/foot}
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
 \mode<all>

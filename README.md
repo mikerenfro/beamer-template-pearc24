@@ -31,3 +31,11 @@ Given I try to structure my presentations to have at most 5 sections and 5 subse
 From the Beamer User Guide, the Hannover theme resembles what I'm looking for in the left sidebar, and we can still use elements of Malmoe for the footline area provided by the PEARC background image.
 
 Started by copying Karol's four theme files to `beamercolorthemePEARC24.sty`, `beamerouterthemePEARC24.sty`, `beamerinnerthemePEARC24.sty`, `beamerthemePEARC24.sty`, and removing anything to do with color or formatting, leaving only semantic or structural items.
+
+### Making better use of the footline
+
+By default, the footline contains a bunch of navigation symbols, but I usually prefer to hide those entirely and put the title, author, and maybe slide number information there instead.
+
+Copy/pasting the footline template info from beamerouterthemesplit.sty into beamerouterthemePEARC24.sty mostly worked, except that I want to have the footline content centered vertically in the orange area.
+As the orange area is approximately 27.5 points high, I increased the height of beamercolorbox to match, and then increased the  depth by about 50%.
+
