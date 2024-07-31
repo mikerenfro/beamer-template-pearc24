@@ -39,3 +39,11 @@ By default, the footline contains a bunch of navigation symbols, but I usually p
 Copy/pasting the footline template info from beamerouterthemesplit.sty into beamerouterthemePEARC24.sty mostly worked, except that I want to have the footline content centered vertically in the orange area.
 As the orange area is approximately 27.5 points high, I increased the height of beamercolorbox to match, and then increased the  depth by about 50%.
 
+### Fixing the footnote position
+
+Looking through Karol's content, the footnote attached to one figure overlaps both the blue border between the footline and the slide content, and also the PEARC logo in the bottom left.
+It's not too likely anyone at PEARC will need a footnote, but no reason to make them show up in an obviously wrong place.
+
+We get rid of the footnote rule entirely since it's less applicable for a slide versus a long-form article.
+We also use `addtobeamertemplate{footnote}` to adjust the position of the footnote text.
+Both of these changes go into `beamerinnerthemePEARC24.sty`.
