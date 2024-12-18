@@ -51,10 +51,13 @@ We get rid of the footnote rule entirely since it's less applicable for a slide 
 We also use `addtobeamertemplate{footnote}` to adjust the position of the footnote text.
 Both of these changes go into `beamerinnerthemePEARC24.sty`.
 
-### Color scheme
+### Initial color scheme
 
 The default Beamer colors for alerts, examples, blocks, etc. doesn't blend with the orange (RGB 230, 153, 72) and blue (RGB 37, 50, 130) for PEARC24.
 We should be able to make good use of orange, blue, black, and white to get high contrast between text and background colors in all cases.
 Defining the orange and blue colors in `beamercolorthemePEARC24.sty` and setting the hyperlink color to orange works, but hides the title in the footline, since that's technically a hyperlink to the title slide.
 We can control the footline hyperlink color by adding `\addtobeamertemplate{footline}{\hypersetup{linkcolor=white}}{}` to `beamerouterthemePEARC24.sty` ([Changing URL colors in headline / footline of beamer template](https://tex.stackexchange.com/a/214090/3345)), making the hyperlink text contrast strongly with the orange background of the footline.
 We'll also adjust the color of `\url{}` links by adding `urlcolor = PEARCOrange` to the `\hypersetup` command in  `beamercolorthemePEARC24.sty`.
+
+### Headings on the left, above the PEARC logo
+
